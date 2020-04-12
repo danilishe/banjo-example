@@ -11,7 +11,8 @@ import org.testng.annotations.DataProvider;
                 "json:target/cucumber.json",
         },
         glue = {"steps", "hooks"},
-        features = "classpath:features"
+        features = "classpath:features",
+        tags = "@SampleScenarioFailAndSoftAssert"
 )
 public class TestsRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;

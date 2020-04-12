@@ -379,7 +379,6 @@ public final class CommonStepsLibrary extends BaseSteps {
         resetCurrentBlock();
         AbstractPage page = getPageByTitle(pageTitle);
         softAssert().assertTrue(page.isOpen(), "Страница '" + pageTitle + "' не открыта");
-
     }
 
     @Если("в {type} {string} ввести {string}")
